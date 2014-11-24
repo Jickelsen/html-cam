@@ -5,18 +5,21 @@
 <meta name="viewport" content="width=320">
 <title>Browser Camera Demo</title>
 <link rel="stylesheet" href="style.css">
-<body>  
+<body>
     <header>
         Take a photo with your Android browser.
     </header>
     <div id="content"></div>
+    <canvas id="filterCanvas" width="520" height="300" style="display:none;"></canvas>
+    <canvas id="composeCanvas" width="520" height="300" style="display:none;"></canvas>
+    <img id="canvasImg" alt="Right click to save me!">
     <form>
         <!-- prompt the user, Camera or Gallery -->
-        <input type="file" accept="image/*" />  
-        
-        <!-- open the camera immediately    
+        <input type="file" accept="image/*" />
+
+        <!-- open the camera immediately
         <input type="file" accept="image/*;capture=camera" />
-        -->                                 
+        -->
     </form>
  	<footer>
 	<a href="https://github.com/don/html-cam">Source Code</a>
